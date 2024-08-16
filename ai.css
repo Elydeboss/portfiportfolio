@@ -1,0 +1,121 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2C3E50; /* Primary color */
+}
+
+.hover-effect:hover {
+    background-color: rgba(229, 226, 226, 0.988); /* Light shade of white */
+    color: rgba(40, 39, 39, 0.904);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+#mage{
+    width: 100%;
+    height: auto;
+}
+
+
+/*
+@media screen (min-width: 767px) {
+    #mage{
+        width: 100%;   
+    }
+}
+*/
+
+/*first flex-containeer 
+#flex-contain{
+    display: flex;
+    align-items: center;
+}
+*/
+
+header {
+    background-color: #ECF0F1; /* Secondary color */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 900px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #2C3E50; /* Primary color */
+}
+.nav-links li a:hover {
+    text-decoration: none;
+    background-color: #9c7de5; /* Primary color */
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: #2C3E50; /* Primary color */
+    margin: 4px 0;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #ECF0F1; /* Secondary color */
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+}
+.card{
+    display: inline-flex;
+}
+.sub-card{
+    background-color: rgba(19, 19, 19, 0.795);
+    margin-right: 20px;
+}
+.card-para{
+    text-align: right;
+}
